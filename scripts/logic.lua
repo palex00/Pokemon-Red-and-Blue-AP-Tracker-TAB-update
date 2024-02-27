@@ -226,9 +226,6 @@ function elite4()
     local key_items = key_items()
     local pokedex_required = Tracker:ProviderCountForCode("elite4_pokedex")
     local pokedex = Tracker:ProviderCountForCode("pokemon")
-    print(badges," badges of ", badges_required, "required")
-    print(key_items," key items of ", key_items_required, "required")
-    print(pokedex," pokemon of ", pokedex_required, "required")
     return ((badges >= badges_required) and (key_items >= key_items_required) and (pokedex >= pokedex_required))
 end
 
