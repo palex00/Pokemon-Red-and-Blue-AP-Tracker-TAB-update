@@ -129,10 +129,22 @@ function onClear(slot_data)
             obj.CurrentStage = slot_data['free_fly_map']
         end
     end
-	if slot_data['elite_four_condition'] then
-		local obj = Tracker:FindObjectForCode("elite4")
+	if slot_data['elite_four_badges_condition'] then
+		local obj = Tracker:FindObjectForCode("elite4_badges")
 		if obj then
-			obj.AcquiredCount = slot_data['elite_four_condition']
+			obj.AcquiredCount = slot_data['elite_four_badges_condition']
+		end
+	end
+    if slot_data['elite_four_key_items_condition'] then
+		local obj = Tracker:FindObjectForCode("elite4_key_items")
+		if obj then
+			obj.AcquiredCount = slot_data['elite_four_key_items_condition']
+		end
+	end
+    if slot_data['elite_four_pokedex_condition'] then
+		local obj = Tracker:FindObjectForCode("elite4_pokedex")
+		if obj then
+			obj.AcquiredCount = slot_data['elite_four_pokedex_condition']
 		end
 	end
 	if slot_data['victory_road_condition'] then

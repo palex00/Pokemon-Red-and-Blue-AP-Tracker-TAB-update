@@ -1,2 +1,4 @@
 *.zip
 /.vscode/
+options_ref.json
+todo.txt

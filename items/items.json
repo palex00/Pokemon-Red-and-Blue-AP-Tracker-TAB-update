@@ -292,7 +292,23 @@
         "max_quantity": 8,
         "initial_quantity": 8,
         "img": "images/elite4.png",
-        "codes": "elite4"
+        "codes": "elite4_badges"
+    },
+    {
+        "name": "Elite 4 Key Items",
+        "type": "consumable",
+        "max_quantity": 8,
+        "initial_quantity": 8,
+        "img": "images/elite4.png",
+        "codes": "elite4_key_items"
+    },
+    {
+        "name": "Elite 4 Pokedex",
+        "type": "consumable",
+        "max_quantity": 8,
+        "initial_quantity": 8,
+        "img": "images/elite4.png",
+        "codes": "elite4_pokedex"
     },
     {
         "name": "Victory Road Badges",

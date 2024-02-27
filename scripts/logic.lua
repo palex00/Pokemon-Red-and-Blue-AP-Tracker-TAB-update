@@ -151,26 +151,7 @@ function badges()
     return amt
 end
 
-function elite4()
-    local count = Tracker:ProviderCountForCode("elite4")
-    local badges = badges()
-    return (badges >= count)
-end
-
-function victoryroad()
-    local count = Tracker:ProviderCountForCode("victoryroad")
-    local badges = badges()
-    return (badges >= count)
-end
-
-function viridiangym()
-    local count = Tracker:ProviderCountForCode("viridian")
-    local badges = badges()
-    return (badges >= count)
-end
-
-function ceruleancave()
-    local count = Tracker:ProviderCountForCode("cerulean")
+function key_items()
     local amt = badges()
     if has("bike") then
         amt = amt + 1
@@ -235,7 +216,38 @@ function ceruleancave()
     if has("flash") then
         amt = amt + 1
     end
-    return (amt >= count)
+    return amt
+end
+
+function elite4()
+    local badges_required = Tracker:ProviderCountForCode("elite4_badges")
+    local badges = badges()
+    local key_items_required = Tracker:ProviderCountForCode("elite4_key_items")
+    local key_items = key_items()
+    local pokedex_required = Tracker:ProviderCountForCode("elite4_pokedex")
+    local pokedex = Tracker:ProviderCountForCode("pokemon")
+    print(badges," badges of ", badges_required, "required")
+    print(key_items," key items of ", key_items_required, "required")
+    print(pokedex," pokemon of ", pokedex_required, "required")
+    return ((badges >= badges_required) and (key_items >= key_items_required) and (pokedex >= pokedex_required))
+end
+
+function victoryroad()
+    local count = Tracker:ProviderCountForCode("victoryroad")
+    local badges = badges()
+    return (badges >= count)
+end
+
+function viridiangym()
+    local count = Tracker:ProviderCountForCode("viridian")
+    local badges = badges()
+    return (badges >= count)
+end
+
+function ceruleancave()
+    local count = Tracker:ProviderCountForCode("cerulean")
+--TODO: split into badges and key items
+    return (key_items() >= count)
 end
 
 function boulders()
