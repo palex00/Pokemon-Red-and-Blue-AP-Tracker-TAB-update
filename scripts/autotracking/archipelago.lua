@@ -276,6 +276,20 @@ function onClear(slot_data)
                 obj.CurrentStage = slot_data['trainersanity']
             end
         end
+        if slot_data['poke_doll_skip'] then
+            -- print(slot_data['poke_doll_skip'])
+            local obj = Tracker:FindObjectForCode("op_pokedoll_skip")
+            if obj then
+                obj.CurrentStage = slot_data['poke_doll_skip']
+            end
+        end
+        if slot_data['bicycle_gate_skips'] then
+            -- print(slot_data['bicycle_gate_skips'])
+            local obj = Tracker:FindObjectForCode("op_bike_skips")
+            if obj then
+                obj.CurrentStage = slot_data['bicycle_gate_skips']
+            end
+        end
     end
 end
 

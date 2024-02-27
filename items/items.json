@@ -287,6 +287,39 @@
         ]
     },
     {
+        "name": "Bicycle Skip Patched",
+        "type": "progressive",
+        "loop": true,
+        "allow_disabled": false,
+        "stages": [
+            {
+                "img": "images/oldmanno.png",
+                "codes": "op_bike_skips,op_bike_skips_off"
+            },
+            {
+                "img": "images/oldman.png",
+                "codes": "op_bike_skips,op_bike_skips_on",
+                "inherit_codes": false
+            }
+        ]
+    },{
+        "name": "Pokedoll Skip",
+        "type": "progressive",
+        "loop": true,
+        "allow_disabled": false,
+        "stages": [
+            {
+                "img": "images/oldmanno.png",
+                "codes": "op_pokedoll_skip,op_pokedoll_skip_off"
+            },
+            {
+                "img": "images/oldman.png",
+                "codes": "op_pokedoll_skip,op_pokedoll_skip_on",
+                "inherit_codes": false
+            }
+        ]
+    },
+    {
         "name": "Elite 4 Badges",
         "type": "consumable",
         "max_quantity": 8,
@@ -297,16 +330,16 @@
     {
         "name": "Elite 4 Key Items",
         "type": "consumable",
-        "max_quantity": 8,
-        "initial_quantity": 8,
+        "max_quantity": 32,
+        "initial_quantity": 0,
         "img": "images/elite4.png",
         "codes": "elite4_key_items"
     },
     {
         "name": "Elite 4 Pokedex",
         "type": "consumable",
-        "max_quantity": 8,
-        "initial_quantity": 8,
+        "max_quantity": 151,
+        "initial_quantity": 0,
         "img": "images/elite4.png",
         "codes": "elite4_pokedex"
     },
@@ -332,7 +365,15 @@
         "max_quantity": 29,
         "initial_quantity": 20,
         "img": "images/cerulean.png",
-        "codes": "cerulean"
+        "codes": "cerulean_items"
+    },
+    {
+        "name": "Cerulean Cave Condition",
+        "type": "consumable",
+        "max_quantity": 8,
+        "initial_quantity": 0,
+        "img": "images/cerulean.png",
+        "codes": "cerulean_badges"
     },
     {
         "name": "HM01 Extra",

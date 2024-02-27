@@ -678,12 +678,18 @@
                         "name": "7F Rockets",
                         "item_count": 3,
                         "visibility_rules": ["op_trn_on"],
-                        "access_rules": ["[silphscope]"]
+                        "access_rules": [
+                            "silphscope",
+                            "op_pokedoll_skip_on,$celadon"
+                        ]
                     },
                     {
                         "name": "7F Save Mr. Fuji",
                         "hosted_item": "fuji",
-                        "access_rules": ["[silphscope]"]
+                        "access_rules": [
+                            "silphscope",
+                            "op_pokedoll_skip_on,$celadon"
+                        ]
                     }
                 ],
                 "map_locations": [
@@ -1279,10 +1285,10 @@
             {
                 "name": "Route 17",
                 "access_rules": [
-                    "$celadonnoflash,[$canflash],pokeflute,bike",
-                    "$fuchsianoflash,[$canflash],bike",
-                    "$celadon,pokeflute,bike",
-                    "$fuchsia,bike"
+                    "$celadonnoflash,[$canflash],pokeflute,$bike",
+                    "$fuchsianoflash,[$canflash],$bike",
+                    "$celadon,pokeflute,$bike",
+                    "$fuchsia,$bike"
                 ],
                 "sections": [
                     {

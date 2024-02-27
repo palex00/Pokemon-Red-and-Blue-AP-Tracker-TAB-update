@@ -300,7 +300,7 @@ function pokeflute()
 end
 
 function bike()
-    return has("bike")
+    return (has("bike") or has("op_bike_skips_on"))
 end
 
 function plant()
