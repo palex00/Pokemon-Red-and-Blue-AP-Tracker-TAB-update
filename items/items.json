@@ -90,6 +90,74 @@
         "codes": "cardkey"
     },
     {
+        "name": "Progressive Card Key",
+        "type": "consumable", 
+        "max_quantity": 10,
+        "initial_quantity": 0,
+        "img": "images/cardkey.png",
+        "codes": "progressive_cardkey"
+    },
+    {
+        "name": "Card Key 2F",
+        "type": "toggle",
+        "img": "images/cardkey.png",
+        "codes": "cardkey2f, split_cardkey"
+    },
+    {
+        "name": "Card Key 3F",
+        "type": "toggle",
+        "img": "images/cardkey.png",
+        "codes": "cardkey3f, split_cardkey"
+    },
+    {
+        "name": "Card Key 4F",
+        "type": "toggle",
+        "img": "images/cardkey.png",
+        "codes": "cardkey4f, split_cardkey"
+    },
+    {
+        "name": "Card Key 5F",
+        "type": "toggle",
+        "img": "images/cardkey.png",
+        "codes": "cardkey5f, split_cardkey"
+    },
+    {
+        "name": "Card Key 6F",
+        "type": "toggle",
+        "img": "images/cardkey.png",
+        "codes": "cardkey6f, split_cardkey"
+    },
+    {
+        "name": "Card Key 7F",
+        "type": "toggle",
+        "img": "images/cardkey.png",
+        "codes": "cardkey7f, split_cardkey"
+    },
+    {
+        "name": "Card Key 8F",
+        "type": "toggle",
+        "img": "images/cardkey.png",
+        "codes": "cardkey8f, split_cardkey"
+    },
+    {
+        "name": "Card Key 9F",
+        "type": "toggle",
+        "img": "images/cardkey.png",
+        "codes": "cardkey9f, split_cardkey"
+    },
+    {
+        "name": "Card Key 10F",
+        "type": "toggle",
+        "img": "images/cardkey.png",
+        "codes": "cardkey10f, split_cardkey"
+    },
+    {
+        "name": "Card Key 11F",
+        "type": "toggle",
+        "img": "images/cardkey.png",
+        "codes": "cardkey11f, split_cardkey"
+    },
+    {
         "name": "SS Ticket",
         "type": "toggle",
         "img": "images/ssticket.png",
@@ -190,36 +258,6 @@
         "type": "toggle",
         "img": "images/helix.png",
         "codes": "helix,fossil"
-    },
-    {
-        "name": "Flippers",
-        "type": "toggle",
-        "img": "images/flippers.png",
-        "codes": "flippers,flip"
-    },
-    {
-        "name": "Master Sword",
-        "type": "toggle",
-        "img": "images/mastersword.png",
-        "codes": "mastersword,ms,sword"
-    },
-    {
-        "name": "Flute",
-        "type": "toggle",
-        "img": "images/flute.png",
-        "codes": "flute"
-    },
-    {
-        "name": "Titan's Mitts",
-        "type": "toggle",
-        "img": "images/titansmitts.png",
-        "codes": "mitts"
-    },
-    {
-        "name": "Lamp",
-        "type": "toggle",
-        "img": "images/lamp.png",
-        "codes": "lamp"
     },
     {
         "name": "HM01 Cut",
@@ -360,7 +398,7 @@
         "codes": "viridian"
     },
     {
-        "name": "Cerulean Cave Condition",
+        "name": "Cerulean Cave Key Item Requirement",
         "type": "consumable",
         "max_quantity": 29,
         "initial_quantity": 20,
@@ -368,7 +406,7 @@
         "codes": "cerulean_items"
     },
     {
-        "name": "Cerulean Cave Condition",
+        "name": "Cerulean Cave Badge Requirement",
         "type": "consumable",
         "max_quantity": 8,
         "initial_quantity": 0,

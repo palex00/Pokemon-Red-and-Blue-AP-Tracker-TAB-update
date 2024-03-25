@@ -159,15 +159,16 @@ function onClear(slot_data)
 			obj.AcquiredCount = slot_data['viridian_gym_condition']
 		end
 	end
-	-- commented out until it is known how to fix this
-	-- currently doesn't change the number
-	-- I think the issue is the name in slot_data isn't cerulean_cave_condition, but dunno what it would be called.
-	-- However, every other option is named in the same manner, so it would be logical for it to be cerulean_cave_condition
-	-- (SonicRPika)
-	if slot_data['cerulean_cave_condition'] then
-		local obj = Tracker:FindObjectForCode("cerulean")
+	if slot_data['cerulean_cave_badges_condition'] then
+		local obj = Tracker:FindObjectForCode("cerulean_badges")
 		if obj then
-			obj.AcquiredCount = slot_data['cerulean_cave_condition']
+			obj.AcquiredCount = slot_data['cerulean_cave_badges_condition']
+		end
+	end
+    if slot_data['cerulean_cave_key_items_condition'] then
+		local obj = Tracker:FindObjectForCode("cerulean_badges")
+		if obj then
+            obj.AcquiredCount = slot_data['cerulean_cave_key_items_condition']
 		end
 	end
     if slot_data['prizesanity'] then
