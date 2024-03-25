@@ -152,7 +152,7 @@ function badges()
 end
 
 function key_items()
-    local amt = badges()
+    local amt = 0
     if has("bike") then
         amt = amt + 1
     end
@@ -248,9 +248,11 @@ function viridiangym()
 end
 
 function ceruleancave()
-    local count = Tracker:ProviderCountForCode("cerulean")
---TODO: split into badges and key items
-    return (key_items() >= count)
+    local key_item_count = Tracker:ProviderCountForCode("cerulean_items")
+    local badge_count = Tracker:ProviderCountForCode("cerulean_badges")
+    print(key_items() .. "items out of " .. key_item_count)
+    print(badges().."out of "..badge_count)
+    return (key_items() >= key_item_count) and (badges() >= badge_count)
 end
 
 function boulders()
