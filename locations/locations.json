@@ -8,7 +8,7 @@
             {
                 "name": "Fossil",
                 "access_rules": [
-                    "$pewter,[$cinnabar],[$fossils]"
+                    "$past_pewter,[$cinnabar],[$fossils]"
                 ],
                 "sections": [
                     {
@@ -296,7 +296,7 @@
             {
                 "name": "Mt Moon",
                 "access_rules": [
-                    "$pewter"
+                    "$mtmoon"
                 ],
                 "sections": [
                     {
@@ -365,7 +365,7 @@
             {
                 "name": "Route 4",
                 "access_rules": [
-                    "$pewter"
+                    "$mtmoon"
                 ],
                 "sections": [
                     {

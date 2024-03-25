@@ -371,7 +371,7 @@ end
 
 function pewter()
     return (
-        oldman() or flypewter() or flycerulean() or flyvermillion()
+        oldman() or flypewter() or (flycerulean() and cancut()) or (flyvermillion() and cancut())
         or ((flylavender() or flyceladon()) and (guard() or (cancut() and canflash()) or (boulders() and pokeflute())))
         or (flyfuchsia() and ((pokeflute() and (bike() or boulders())) or cansurf()) and (guard() or (cancut() and canflash()) or (boulders() and pokeflute())))
         or (canstrength() and cansurf() and (guard() or (cancut() and canflash())))
@@ -379,12 +379,40 @@ function pewter()
     )
 end
 
+function past_pewter()
+	return (
+		pewter() and (
+			(has("rt3_open")) or
+			(has("rt3_boulder") and has("boulder")) or
+			(has("rt3_brock")) or
+			(has("rt3_badge") and (has("boulder") or has("cascade") or has("thunder") or has("rainbow") or has("soul") or has("marsh") or has("volcano") or has("earth"))) or
+			(has("rt3_gym"))
+			)
+	)
+end
+
+function mtmoon()
+	return (
+		(past_pewter() or
+		(cerulean() and cansurf())
+		)
+	)
+end
+
 function cerulean()
-    return pewter()
+    return (
+	past_pewter() or
+	flycerulean() or
+	flyvermillion()
+	)
 end
 
 function vermillion()
-    return pewter()
+    return (
+	past_pewter() or
+	flycerulean() or
+	flyvermillion()
+	)
 end
 
 function lavender()
