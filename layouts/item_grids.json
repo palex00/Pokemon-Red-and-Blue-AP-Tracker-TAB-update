@@ -28,12 +28,12 @@
                 "item_size": 32,
                 "h_alignment": "center",
                 "rows": [
-                    ["aide2","aide11","aide15"],
-                    ["elite4","victoryroad","viridian","cerulean"],
+                    ["aide2","aide11","aide15","rt3"],
+                    ["elite4_badges","victoryroad","viridian","cerulean"],
                     ["op_if","op_hid","op_hm","op_man"],
                     ["op_tea","op_exk","op_bldr","op_prize"],
                     ["op_trn","op_fos","op_dex"],
-                    ["op_bike_skips", "op_pokedoll_skip"]
+                    ["op_bike_skips", "op_pokedoll_skip"],
                 ]
             },
             {
