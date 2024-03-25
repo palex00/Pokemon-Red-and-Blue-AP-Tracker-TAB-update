@@ -413,11 +413,7 @@ function cerulean()
 end
 
 function vermillion()
-    return (
-	past_pewter() or
-	flycerulean() or
-	flyvermillion()
-	)
+    return cerulean()
 end
 
 function lavender()
