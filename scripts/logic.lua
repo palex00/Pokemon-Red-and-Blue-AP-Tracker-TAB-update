@@ -384,29 +384,21 @@ function pewter()
     )
 end
 
-function past_pewter()
+function rt3()
     return (
         pewter() and (
-            (has("rt3_open")) or
+            has("rt3_open") or
             (has("rt3_boulder") and has("boulder")) or
-            (has("rt3_brock")) or
-            (has("rt3_badge") and (has("boulder") or has("cascade") or has("thunder") or has("rainbow") or has("soul") or has("marsh") or has("volcano") or has("earth"))) or
-            (has("rt3_gym"))
+            has("rt3_brock") or
+            (has("rt3_badge") and has("badge")) or
+            has("rt3_gym")
             )
-    )
-end
-
-function mtmoon()
-    return (
-        (past_pewter() or
-        (cerulean() and cansurf())
-        )
     )
 end
 
 function cerulean()
     return (
-    past_pewter() or
+    rt3() or
     flycerulean() or
     flyvermillion()
     )

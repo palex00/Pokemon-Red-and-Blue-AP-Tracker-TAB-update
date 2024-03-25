@@ -8,7 +8,7 @@
             {
                 "name": "Fossil",
                 "access_rules": [
-                    "$past_pewter,[$cinnabar],[$fossils]"
+                    "$rt3,[$cinnabar],[$fossils]"
                 ],
                 "sections": [
                     {
@@ -277,7 +277,7 @@
             },
             {
                 "name": "Route 3",
-                "access_rules": ["$pewter"],
+                "access_rules": ["$rt3"],
                 "sections": [
                     {
                         "name": "Trainers",
@@ -296,7 +296,8 @@
             {
                 "name": "Mt Moon",
                 "access_rules": [
-                    "$mtmoon"
+                    "$rt3",
+                    "$cerulean, $cansurf"
                 ],
                 "sections": [
                     {
@@ -365,7 +366,8 @@
             {
                 "name": "Route 4",
                 "access_rules": [
-                    "$mtmoon"
+                    "$rt3",
+                    "$cerulean"
                 ],
                 "sections": [
                     {
