@@ -222,6 +222,9 @@ function key_items()
     if has ("split_cardkey") then
         amt = amt + Tracker:ProviderCountForCode("split_cardkey")
     end
+    if has("stone") then
+        amt = amt + Tracker:ProviderCountForCode("stone")
+    end
     return amt
 end
 
@@ -382,31 +385,31 @@ function pewter()
 end
 
 function past_pewter()
-	return (
-		pewter() and (
-			(has("rt3_open")) or
-			(has("rt3_boulder") and has("boulder")) or
-			(has("rt3_brock")) or
-			(has("rt3_badge") and (has("boulder") or has("cascade") or has("thunder") or has("rainbow") or has("soul") or has("marsh") or has("volcano") or has("earth"))) or
-			(has("rt3_gym"))
-			)
-	)
+    return (
+        pewter() and (
+            (has("rt3_open")) or
+            (has("rt3_boulder") and has("boulder")) or
+            (has("rt3_brock")) or
+            (has("rt3_badge") and (has("boulder") or has("cascade") or has("thunder") or has("rainbow") or has("soul") or has("marsh") or has("volcano") or has("earth"))) or
+            (has("rt3_gym"))
+            )
+    )
 end
 
 function mtmoon()
-	return (
-		(past_pewter() or
-		(cerulean() and cansurf())
-		)
-	)
+    return (
+        (past_pewter() or
+        (cerulean() and cansurf())
+        )
+    )
 end
 
 function cerulean()
     return (
-	past_pewter() or
-	flycerulean() or
-	flyvermillion()
-	)
+    past_pewter() or
+    flycerulean() or
+    flyvermillion()
+    )
 end
 
 function vermillion()

@@ -260,6 +260,36 @@
         "codes": "helix,fossil"
     },
     {
+        "name": "Fire Stone",
+        "type": "toggle",
+        "img": "images/firestone.png",
+        "codes": "firestone,stone"
+    },
+    {
+        "name": "Leaf Stone",
+        "type": "toggle",
+        "img": "images/leafstone.png",
+        "codes": "leafstone,stone"
+    },
+    {
+        "name": "Thunder Stone",
+        "type": "toggle",
+        "img": "images/thunderstone.png",
+        "codes": "thunderstone,stone"
+    },
+    {
+        "name": "Water Stone",
+        "type": "toggle",
+        "img": "images/waterstone.png",
+        "codes": "waterstone,stone"
+    },
+    {
+        "name": "Moon Stone",
+        "type": "toggle",
+        "img": "images/moonstone.png",
+        "codes": "moonstone,stone"
+    },
+    {
         "name": "HM01 Cut",
         "type": "toggle",
         "img": "images/hm01.png",
