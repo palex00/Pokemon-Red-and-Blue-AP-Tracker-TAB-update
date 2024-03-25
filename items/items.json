@@ -409,11 +409,11 @@
         "allow_disabled": false,
         "stages": [
             {
-                "img": "images/oldmanno.png",
+                "img": "images/pokedoll.png",
                 "codes": "op_pokedoll_skip,op_pokedoll_skip_off"
             },
             {
-                "img": "images/oldman.png",
+                "img": "images/pokedollno.png",
                 "codes": "op_pokedoll_skip,op_pokedoll_skip_on",
                 "inherit_codes": false
             }
