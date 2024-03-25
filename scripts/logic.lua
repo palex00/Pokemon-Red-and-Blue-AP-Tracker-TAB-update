@@ -365,7 +365,7 @@ end
 
 function pewter()
     return (
-        oldman() or flypewter() or flycerulean() or flyvermillion()
+        oldman() or flypewter() or (flycerulean() and cancut()) or (flyvermillion() and cancut())
         or ((flylavender() or flyceladon()) and (guard() or (cancut() and canflash()) or (boulders() and pokeflute())))
         or (flyfuchsia() and ((pokeflute() and (bike() or boulders())) or cansurf()) and (guard() or (cancut() and canflash()) or (boulders() and pokeflute())))
         or (canstrength() and cansurf() and (guard() or (cancut() and canflash())))
