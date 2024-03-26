@@ -375,23 +375,31 @@ function flyindigo()
 end
 
 function pewter()
-    return (
-        oldman() or flypewter() or (flycerulean() and cancut()) or (flyvermillion() and cancut())
-        or ((flylavender() or flyceladon()) and (guard() or (cancut() and canflash()) or (boulders() and pokeflute())))
-        or (flyfuchsia() and ((pokeflute() and (bike() or boulders())) or cansurf()) and (guard() or (cancut() and canflash()) or (boulders() and pokeflute())))
-        or (canstrength() and cansurf() and (guard() or (cancut() and canflash())))
-        or (flysaffron() and guard())
-    )
+    -- return (
+    --     oldman()
+    --     or flypewter()
+    --     or cancut() and (
+    --         (flycerulean()
+    --         or (flyvermillion()
+    --         or ((flylavender() or flyceladon()) and (guard() or (canflash()) or (boulders() and pokeflute())))
+    --         or (flyfuchsia() and ((pokeflute() and (bike() or boulders())) or cansurf()) and (guard() or canflash() or (boulders() and pokeflute())))
+    --         or (canstrength() and cansurf() and (guard() or canflash()))
+    --         or (flysaffron() and guard()))
+    --         )
+    --     )
+    -- )
+    return oldman() or flypewter() or cancut()
 end
 
 function rt3()
     return (
         pewter() and (
-            has("rt3_open") or
-            (has("rt3_boulder") and has("boulder")) or
-            has("rt3_brock") or
-            (has("rt3_badge") and has("badge")) or
-            has("rt3_gym")
+            has("rt3_open") 
+            or (has("rt3_boulder") and has("boulder"))
+            or has("rt3_brock")
+            or (has("rt3_badge") and has("badge"))
+            or has("rt3_gym")
+            or cerulean() and cansurf()
             )
     )
 end
