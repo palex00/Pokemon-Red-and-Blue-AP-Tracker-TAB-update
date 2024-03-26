@@ -40,12 +40,20 @@
                             "dock": "top",
                             "tabs": [
                                 {
-                                    "title": "Map",
+                                    "title": "Kanto",
                                     "icon": "images/map.png",
                                     "content": {
                                         "type": "map",
                                         "maps": ["map"]
-                                    }
+                                    },
+                                {
+                                    "title": "Rock Tunnel",
+                                    "icon": "images/rocktunnel.png",
+                                    "content": {
+                                        "type": "map",
+                                        "maps": ["rocktunnel"]
+									}
+								}
                                 }
                             ]
                         }
